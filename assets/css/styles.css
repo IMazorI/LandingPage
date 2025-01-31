@@ -1,58 +1,9 @@
 :root{
     --primary-color:#0a1128;
     --white-color:#ffffff;
-    --gap: 3rem;
+    --gap: 5rem;
     --grey-color:#eeeeee;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-}
-a{
-    text-decoration: none;
-}
-/*
-  font-family: "Open Sans", serif;
-    font-family: "Montserrat", serif;
-*/
-body {
-    font-family: "Open Sans", serif;
-    font-size: 2rem;
-    color: var(--primary-color);
-   
-}
-
-h1,h2,h3,h4,h5,h6 {
-    font-family: "Montserrat", serif;
-}
-
-h1 {
-    font-size: 6rem;
-    text-transform: uppercase;
-}
-
-h2 {
-    font-size: 5.5rem;
-
-}
-
-h3 {
-    font-size: 5rem;
-
-}
-
-h4 {
-    font-size: 4.5rem;
-
-}
-
-h5 {
-    font-size: 4rem;
-
-}
-h6{
-    font-size: 3.5rem;
+    --secundary-color:crimson;
 }
 
 .main-bg{
@@ -65,7 +16,7 @@ h6{
    background: var(--white-color);
 }
 .main-content{
-    max-width: 1200px;
+    max-width: 120rem;
     margin:0 auto;
     padding: var(--gap);
 
@@ -74,13 +25,14 @@ h6{
     min-height: 100vh;
 }
 .menu{
-    background: var(--white-color);
+    
     position: fixed;
     top:0;
     left: 0;
     right: 0;
     width:100%;
-    border-bottom: var(--grey-color) 1px solid;
+    z-index: 1;
+    border-bottom: var(--grey-color) 0.1rem solid;
 }
 
 .menu-content{
@@ -106,7 +58,7 @@ color:var(--primary-color);
 }
 .menu ul li a{
     display: block;
-    padding:1.8rem;
+    padding:1rem;
     color:var(--primary-color);
     position:relative; /* PRECISA DEFINIR O PAI PARA NAO PEGAR A NAV TODA*/
     
@@ -118,7 +70,7 @@ color:var(--primary-color);
     left: 50%;
     width: 0;
     height: 0.2rem;
-    background:crimson;
+    background:var(--secundary-color);
     transition: all 300ms ease-in-out;
 
 }
@@ -127,4 +79,33 @@ color:var(--primary-color);
     left: 25%;
 }
 
+.menu-spacing{
+    height: 75px;
+}
+
+.intro-content{
+    position: relative;
+    top:-7rem;
+display: grid;
+grid-template-columns: 1fr 1.5fr;
+gap: var(--gap);
+height: 100vh;
+
+}
+.intro-text-content, .intro-img{
+display: flex;
+flex-flow: column wrap;
+justify-content: center;
+
+}
+.intro-text-content h2{
+    margin-bottom: 5rem;
+    text-transform: uppercase;
+
+}
+
+.intro-img img{
+    max-width:100%;
+    height: auto;
+}
     
