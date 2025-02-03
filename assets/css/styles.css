@@ -14,6 +14,7 @@
 }
 .white-bg{
    background: var(--white-color);
+   color: var(--primary-color);
 }
 .main-content{
     max-width: 120rem;
@@ -107,5 +108,20 @@ justify-content: center;
 .intro-img img{
     max-width:100%;
     height: auto;
+}
+
+.top-3-content{
+    max-width: 64rem;
+    display: flex;
+    flex-flow: column ;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    
+
+}
+.top-3-content p {
+margin-bottom: 2rem;
+   
 }
     
