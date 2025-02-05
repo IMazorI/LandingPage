@@ -153,13 +153,14 @@
 }
 
 .gridTop-content {
+    
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: center;
     min-height: 100vh;
     
-    text-align: start;
+    
     
 }
 
@@ -175,11 +176,13 @@
 }
 
 .grid {
+    
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: var(--gap);
     counter-reset: grid-counter;
-    justify-content: center;
+   
+    
 }
 
 .grid h3 {
@@ -222,4 +225,7 @@
         transform:translate(-3%,3%) scale(1.2);
 }
 
+.responsive-table{
+    overflow-x: auto;
+}
 
