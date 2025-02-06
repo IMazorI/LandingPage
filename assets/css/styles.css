@@ -421,7 +421,8 @@ body .full-width {
         display: none;
     }
 
-
+    /*
+    Nao funcionou corretamente
     .h2-intro {
         text-align: center;
         font-size: 4rem;
@@ -432,11 +433,43 @@ body .full-width {
     body p{
         text-align: left;
         font-size: 1.5rem;
-    }
-    .grid-description{
-        font-size:1.4rem;
+    }   
+  */
+
+    .intro-content {
+        overflow: hidden;
+        /* Oculta qualquer conteúdo que extrapole */
+        width: 100%;
+        /* Certifique-se de que a largura está definida */
     }
 
+    h2 {
+        max-width: 100%;
+        box-sizing: border-box;
+        word-wrap: break-word;
+        /* Permite a quebra de palavras longas */
+        word-break: break-word;
+        /* Força a quebra caso necessário */
+        white-space: normal;
+        /* Impede que o texto fique em uma única linha */
+    }
+
+    body p {
+        text-align: left;
+        font-size: 1.5rem;
+    }
+
+    .grid-description {
+        font-size: 1.4rem;
+    }
+
+    .h2-intro {
+        font-size: 3.5rem;
+    }
+
+    .responsive-table {
+        font-size: 1.5rem;
+    }
 
 
 
