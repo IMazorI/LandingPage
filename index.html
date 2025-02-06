@@ -15,14 +15,16 @@
         rel="stylesheet">
 </head>
 
-<body >
+<body>
+    <input type="checkbox" class="close-menu" id="close-menu" aria-label="Close menu" role="button">
+    <label for="close-menu" class="close-menu-label" title="close menu"></label>
     <aside class="menu white-bg">
         <div class="main-content menu-content">
-            <h1>
+            <h1 onclick="getElementById('close-menu').checked = false;">
                 <a href="#">LOGO</a>
             </h1>
             <NAV>
-                <ul>
+                <ul onclick="getElementById('close-menu').checked = false;">
                     <li><a href="#intro">Intro</a></li>
                     <li> <a href="#main">Main</a></li>
                     <li><a href="#why">Why</a></li>
@@ -67,11 +69,12 @@
 
     </section>
 
-    <section id="why" class=" main-content section ">
+    <section id="why" class="grid-why main-bg section ">
 
-        <div class="gridTop-content">
+        <div class="main-content grid-why-content">
             <h2 class="grid-main-heading">Explore</h2>
             <p class="grid-description">Descricao da minha grid</p>
+
             <div class="grid">
                 <article>
                     <h3>Motivo</h3>
@@ -104,8 +107,8 @@
     </section>
 
 
-    <section id="gallery" class="white-bg main-content section ">
-        <div class="gridTop-content ">
+    <section id="gallery" class="white-bg  section ">
+        <div class="gridTop-content main-content ">
             <h2 class="grid-main-heading">My Gallery</h2>
             <p class="grid-description">Descricao da minha grid</p>
 
@@ -211,7 +214,7 @@
                     totam natus doloribus rem?</p>
             </div>
             <div class="intro-img">
-                <img src="assets/img/contact.svg" alt="Imagem Java">
+                <img src="assets/img/contact.svg" alt="Imagem contato">
             </div>
             <div class="contact-form">
                 <fieldset class="form-grid">
@@ -242,7 +245,7 @@
     <footer class="footer main-bg">
         <p>Feito com <span class="heart">❤</span> por Gustavo Maziero</p>
     </footer>
-
+    <a class="back-to-top" href="#">⇑</a>
 </body>
 
 </html>
