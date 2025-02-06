@@ -351,6 +351,7 @@ body .full-width {
 
 @media (max-width:800px) {
 
+    
     .intro-content,
     .grid {
         grid-template-columns: 1fr;
@@ -456,22 +457,35 @@ body .full-width {
 
     body p {
         text-align: left;
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
 
     .grid-description {
-        font-size: 1.4rem;
+        font-size: 1rem;
     }
 
     .h2-intro {
-        font-size: 3.5rem;
+        font-size: 2.8rem;
+    }
+    .h2-contact{
+        font-size:2.5rem;
     }
 
     .responsive-table {
-        font-size: 1.5rem;
+        font-size: 1rem;
+    }
+   
+    .grid h3::before {
+        font-size: 4rem;
+        top: -2rem;
+        left: 0rem;
     }
 
-
+    .grid h3{
+        font-size:2.5rem;
+    }
+    
+    
 
 
 }
